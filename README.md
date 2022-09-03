@@ -18,7 +18,41 @@ This project is Object Detection on iOS with Core ML.<br>If you are interested i
 - iOS 13.0+
 - Swift 4.2
 
-## Model
+## How To Build and Run the Project
+
+### 1. Clone the project
+
+```shell
+git clone https://github.com/tucan9389/ObjectDetection-CoreML
+```
+
+### 2. Download the model
+
+You can download COCO models or another model from [here](#model-size-minimum-ios-version-download-link)
+
+### 3. Add the model to the project
+
+By default, the project uses the `yolov5s` model. If you want to use another model, you can replace the model file in the project.
+
+<img width="1305" alt="Screen Shot 2022-09-03 at 9 48 43 AM" src="https://user-images.githubusercontent.com/37643248/188249381-391d494d-47f0-4bd7-b70b-88809a2d7f04.png">
+
+<img width="560" alt="Screen Shot 2022-09-03 at 9 46 19 AM" src="https://user-images.githubusercontent.com/37643248/188249388-6b29075b-0d02-4421-addd-e8b830613728.png">
+
+### 4. Set model name properly in `ViewController.swift`
+
+<img width="640" alt="image" src="https://user-images.githubusercontent.com/37643248/188249496-20ba838c-7f0f-4457-adac-2fa11344c7de.png">
+
+### 5. Build and Run
+
+## How To Run with your own model
+
+### 1. Convert your model to Core ML
+
+You can check [here](https://github.com/mshamash/yolov5/blob/master/export.py#L189-L333) to convert your object detection model to Core ML with additional layers for supporting `VNRecognizedObjectObservation` output automatically.
+
+### 2. Follow the steps above from Step 3
+
+## Models
 
 ### Model Matadata
 
@@ -136,100 +170,6 @@ This project is Object Detection on iOS with Core ML.<br>If you are interested i
 | YOLOv3TinyInt8LUT   | 14 | 21 | 24 | 23 | 8 | 5 | 5 | 
 | MobileNetV2_SSDLite | 29 | 23 | 23 | 23 | 8 | 6 | 6 | 
 | ObjectDetector      | 29 | 23 | 23 | 24 | 14 | 10 | 11 | 
-
-### Get your own model
-
-> Or you can use your own object detection model
-
-## Build & Run
-
-### 1. Prerequisites
-
-#### 1.1 Import object detection model
-
-![모델 불러오기.png](https://github.com/tucan9389/MobileNetApp-CoreML/blob/master/resource/%EB%AA%A8%EB%8D%B8%20%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0.png?raw=true)
-
-Once you import the model, compiler generates model helper class on build path automatically. You can access the model through model helper class by creating an instance, not through build path.
-
-#### 1.2 Add permission in info.plist for device's camera access
-
-<img width="900" alt="image" src="https://user-images.githubusercontent.com/37643248/188248174-d1d96219-953a-4c56-a274-c85250e9d14b.png">
-
-### 2. Dependencies
-
-No external library yet.
-
-### 3. Code
-
-#### 3.1 Import Vision framework
-
-```swift
-import Vision
-```
-
-#### 3.2 Define properties for Core ML
-
-```swift
-class ViewController: UIViewController {
-    //
-    // ...
-    //
-
-    // MARK: - Vision Properties
-    var request: VNCoreMLRequest?
-    var visionModel: VNCoreMLModel?
-
-    //
-    // ...
-    //
-}
-
-```
-
-#### 3.3 Configure and prepare the model
-
-```swift
-// MARK: - Setup Core ML
-extension ViewController {
-    func setupModel() {
-        if let visionModel = try? VNCoreMLModel(for: objectDectectionModel.model) {
-            self.visionModel = visionModel
-            request = VNCoreMLRequest(model: visionModel, completionHandler: visionRequestDidComplete)
-            request?.imageCropAndScaleOption = .scaleFill
-        } else {
-            fatalError("fail to create vision model")
-        }
-    }
-}
-```
-
-```swift
-// MARK: - Post-processing
-extension ViewController {
-    func visionRequestDidComplete(request: VNRequest, error: Error?) {
-        if let predictions = request.results as? [VNRecognizedObjectObservation] {
-            // <# TODO #>
-        }
-    }
-}
-```
-
-#### 3.4 Inference 🏃‍♂️
-
-```swift
-// MARK: - Inference!
-extension ViewController {
-    func predictUsingVision(pixelBuffer: CVPixelBuffer) {
-        let handler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer)
-        try? handler.perform([request])
-    }
-}
-```
-
-## Performance Test
-
-(preparing...)
-
 
 ## See also
 
