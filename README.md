@@ -8,10 +8,6 @@
 
 This project is Object Detection on iOS with Core ML.<br>If you are interested in iOS + Machine Learning, visit [here](https://github.com/motlabs/iOS-Proejcts-with-ML-Models) you can see various DEMOs.<br>![SSDMobileNetV2-DEMO](https://user-images.githubusercontent.com/37643248/188248210-2c02790b-6231-4549-8211-e3edcccba9e8.gif)
 
-## How it works
-
-(preparing...)
-
 ## Requirements
 
 - Xcode 10.3+
