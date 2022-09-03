@@ -154,7 +154,7 @@ Once you import the model, compiler generates model helper class on build path a
 
 #### 1.2 Add permission in info.plist for device's camera access
 
-<img width="1304" alt="image" src="https://user-images.githubusercontent.com/37643248/188248174-d1d96219-953a-4c56-a274-c85250e9d14b.png">
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/37643248/188248174-d1d96219-953a-4c56-a274-c85250e9d14b.png">
 
 ### 2. Dependencies
 
