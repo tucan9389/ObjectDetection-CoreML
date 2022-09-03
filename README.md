@@ -22,7 +22,7 @@ This project is Object Detection on iOS with Core ML.<br>If you are interested i
 
 ### Model Matadata
 
-<img width="1026" alt="image" src="https://user-images.githubusercontent.com/37643248/188037159-93cf79f7-5c21-4fbf-a46e-874109271606.png">
+<img width="780" alt="image" src="https://user-images.githubusercontent.com/37643248/188037159-93cf79f7-5c21-4fbf-a46e-874109271606.png">
 
 ### Model Size, Minimum iOS Version, Download Link
 
