@@ -7,16 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		553366C62204898800A67647 /* SSDMobileNet_CoreMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553366C52204898800A67647 /* SSDMobileNet_CoreMLTests.swift */; };
+		553366CF220489DD00A67647 /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553366CE220489DD00A67647 /* UIImage+CVPixelBuffer.swift */; };
 		554F149C220362AB00B828B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F149B220362AB00B828B0 /* AppDelegate.swift */; };
 		554F149E220362AB00B828B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F149D220362AB00B828B0 /* ViewController.swift */; };
 		554F14A1220362AB00B828B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554F149F220362AB00B828B0 /* Main.storyboard */; };
 		554F14A3220362AC00B828B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554F14A2220362AC00B828B0 /* Assets.xcassets */; };
 		554F14A6220362AC00B828B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554F14A4220362AC00B828B0 /* LaunchScreen.storyboard */; };
 		554F14AE220362DA00B828B0 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F14AD220362DA00B828B0 /* VideoCapture.swift */; };
+		558918ED2208218800F182BA /* DrawingBoundingBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558918EC2208218800F182BA /* DrawingBoundingBoxView.swift */; };
+		558918EF22089FFE00F182BA /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558918EE22089FFE00F182BA /* Measure.swift */; };
+		C427E67128C2D365001279AD /* yolov5s.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C427E67028C2D365001279AD /* yolov5s.mlmodel */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		553366C82204898800A67647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 554F1490220362AB00B828B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 554F1497220362AB00B828B0;
+			remoteInfo = "SSDMobileNet-CoreML";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		554F1498220362AB00B828B0 /* SSDMobileNet-CoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SSDMobileNet-CoreML.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		553366C32204898800A67647 /* ObjectDetection-CoreMLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ObjectDetection-CoreMLTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		553366C52204898800A67647 /* SSDMobileNet_CoreMLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSDMobileNet_CoreMLTests.swift; sourceTree = "<group>"; };
+		553366C72204898800A67647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		553366CE220489DD00A67647 /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		554F1498220362AB00B828B0 /* ObjectDetection-CoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ObjectDetection-CoreML.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		554F149B220362AB00B828B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		554F149D220362AB00B828B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		554F14A0220362AB00B828B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,9 +43,19 @@
 		554F14A5220362AC00B828B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		554F14A7220362AC00B828B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		554F14AD220362DA00B828B0 /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		558918EC2208218800F182BA /* DrawingBoundingBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoundingBoxView.swift; sourceTree = "<group>"; };
+		558918EE22089FFE00F182BA /* Measure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		C427E67028C2D365001279AD /* yolov5s.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = yolov5s.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		553366C02204898800A67647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		554F1495220362AB00B828B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +66,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		553366C42204898800A67647 /* ObjectDetection-CoreMLTests */ = {
+			isa = PBXGroup;
+			children = (
+				553366C52204898800A67647 /* SSDMobileNet_CoreMLTests.swift */,
+				553366C72204898800A67647 /* Info.plist */,
+			);
+			path = "ObjectDetection-CoreMLTests";
+			sourceTree = "<group>";
+		};
 		554F148F220362AB00B828B0 = {
 			isa = PBXGroup;
 			children = (
-				554F149A220362AB00B828B0 /* SSDMobileNet-CoreML */,
+				554F149A220362AB00B828B0 /* ObjectDetection-CoreML */,
+				553366C42204898800A67647 /* ObjectDetection-CoreMLTests */,
 				554F1499220362AB00B828B0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +87,70 @@
 		554F1499220362AB00B828B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				554F1498220362AB00B828B0 /* SSDMobileNet-CoreML.app */,
+				554F1498220362AB00B828B0 /* ObjectDetection-CoreML.app */,
+				553366C32204898800A67647 /* ObjectDetection-CoreMLTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		554F149A220362AB00B828B0 /* SSDMobileNet-CoreML */ = {
+		554F149A220362AB00B828B0 /* ObjectDetection-CoreML */ = {
 			isa = PBXGroup;
 			children = (
+				554F149F220362AB00B828B0 /* Main.storyboard */,
 				554F149B220362AB00B828B0 /* AppDelegate.swift */,
 				554F149D220362AB00B828B0 /* ViewController.swift */,
-				554F14AD220362DA00B828B0 /* VideoCapture.swift */,
-				554F149F220362AB00B828B0 /* Main.storyboard */,
+				558918EC2208218800F182BA /* DrawingBoundingBoxView.swift */,
+				71B8322322E2B0BC00207D05 /* ultils */,
+				71B8322222E2B0B200207D05 /* mlmodel */,
 				554F14A2220362AC00B828B0 /* Assets.xcassets */,
 				554F14A4220362AC00B828B0 /* LaunchScreen.storyboard */,
 				554F14A7220362AC00B828B0 /* Info.plist */,
 			);
-			path = "SSDMobileNet-CoreML";
+			path = "ObjectDetection-CoreML";
+			sourceTree = "<group>";
+		};
+		71B8322222E2B0B200207D05 /* mlmodel */ = {
+			isa = PBXGroup;
+			children = (
+				C427E67028C2D365001279AD /* yolov5s.mlmodel */,
+			);
+			path = mlmodel;
+			sourceTree = "<group>";
+		};
+		71B8322322E2B0BC00207D05 /* ultils */ = {
+			isa = PBXGroup;
+			children = (
+				554F14AD220362DA00B828B0 /* VideoCapture.swift */,
+				558918EE22089FFE00F182BA /* Measure.swift */,
+				553366CE220489DD00A67647 /* UIImage+CVPixelBuffer.swift */,
+			);
+			path = ultils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		554F1497220362AB00B828B0 /* SSDMobileNet-CoreML */ = {
+		553366C22204898800A67647 /* ObjectDetection-CoreMLTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 554F14AA220362AC00B828B0 /* Build configuration list for PBXNativeTarget "SSDMobileNet-CoreML" */;
+			buildConfigurationList = 553366CA2204898800A67647 /* Build configuration list for PBXNativeTarget "ObjectDetection-CoreMLTests" */;
+			buildPhases = (
+				553366BF2204898800A67647 /* Sources */,
+				553366C02204898800A67647 /* Frameworks */,
+				553366C12204898800A67647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				553366C92204898800A67647 /* PBXTargetDependency */,
+			);
+			name = "ObjectDetection-CoreMLTests";
+			productName = "SSDMobileNet-CoreMLTests";
+			productReference = 553366C32204898800A67647 /* ObjectDetection-CoreMLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		554F1497220362AB00B828B0 /* ObjectDetection-CoreML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 554F14AA220362AC00B828B0 /* Build configuration list for PBXNativeTarget "ObjectDetection-CoreML" */;
 			buildPhases = (
 				554F1494220362AB00B828B0 /* Sources */,
 				554F1495220362AB00B828B0 /* Frameworks */,
@@ -82,9 +160,9 @@
 			);
 			dependencies = (
 			);
-			name = "SSDMobileNet-CoreML";
+			name = "ObjectDetection-CoreML";
 			productName = "SSDMobileNet-CoreML";
-			productReference = 554F1498220362AB00B828B0 /* SSDMobileNet-CoreML.app */;
+			productReference = 554F1498220362AB00B828B0 /* ObjectDetection-CoreML.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -97,12 +175,16 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = tucan9389;
 				TargetAttributes = {
+					553366C22204898800A67647 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 554F1497220362AB00B828B0;
+					};
 					554F1497220362AB00B828B0 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = 554F1493220362AB00B828B0 /* Build configuration list for PBXProject "SSDMobileNet-CoreML" */;
+			buildConfigurationList = 554F1493220362AB00B828B0 /* Build configuration list for PBXProject "ObjectDetection-CoreML" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,12 +197,20 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				554F1497220362AB00B828B0 /* SSDMobileNet-CoreML */,
+				554F1497220362AB00B828B0 /* ObjectDetection-CoreML */,
+				553366C22204898800A67647 /* ObjectDetection-CoreMLTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		553366C12204898800A67647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		554F1496220362AB00B828B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,17 +224,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		553366BF2204898800A67647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553366C62204898800A67647 /* SSDMobileNet_CoreMLTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		554F1494220362AB00B828B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				554F149E220362AB00B828B0 /* ViewController.swift in Sources */,
+				558918EF22089FFE00F182BA /* Measure.swift in Sources */,
+				558918ED2208218800F182BA /* DrawingBoundingBoxView.swift in Sources */,
+				553366CF220489DD00A67647 /* UIImage+CVPixelBuffer.swift in Sources */,
 				554F14AE220362DA00B828B0 /* VideoCapture.swift in Sources */,
+				C427E67128C2D365001279AD /* yolov5s.mlmodel in Sources */,
 				554F149C220362AB00B828B0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		553366C92204898800A67647 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 554F1497220362AB00B828B0 /* ObjectDetection-CoreML */;
+			targetProxy = 553366C82204898800A67647 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		554F149F220362AB00B828B0 /* Main.storyboard */ = {
@@ -166,6 +276,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		553366CB2204898800A67647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WXJ4Z4H69;
+				INFOPLIST_FILE = "SSDMobileNet-CoreMLTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tucan9389.SSDMobileNet-CoreMLTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectDetection-CoreML.app/ObjectDetection-CoreML";
+			};
+			name = Debug;
+		};
+		553366CC2204898800A67647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5WXJ4Z4H69;
+				INFOPLIST_FILE = "SSDMobileNet-CoreMLTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tucan9389.SSDMobileNet-CoreMLTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectDetection-CoreML.app/ObjectDetection-CoreML";
+			};
+			name = Release;
+		};
 		554F14A8220362AC00B828B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -288,12 +438,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5WXJ4Z4H69;
-				INFOPLIST_FILE = "SSDMobileNet-CoreML/Info.plist";
+				INFOPLIST_FILE = "ObjectDetection-CoreML/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tucan9389.SSDMobileNet-CoreML";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tucan9389.ObjectDetection-CoreML";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,12 +457,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5WXJ4Z4H69;
-				INFOPLIST_FILE = "SSDMobileNet-CoreML/Info.plist";
+				INFOPLIST_FILE = "ObjectDetection-CoreML/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tucan9389.SSDMobileNet-CoreML";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tucan9389.ObjectDetection-CoreML";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,7 +473,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		554F1493220362AB00B828B0 /* Build configuration list for PBXProject "SSDMobileNet-CoreML" */ = {
+		553366CA2204898800A67647 /* Build configuration list for PBXNativeTarget "ObjectDetection-CoreMLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553366CB2204898800A67647 /* Debug */,
+				553366CC2204898800A67647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		554F1493220362AB00B828B0 /* Build configuration list for PBXProject "ObjectDetection-CoreML" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				554F14A8220362AC00B828B0 /* Debug */,
@@ -330,7 +491,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		554F14AA220362AC00B828B0 /* Build configuration list for PBXNativeTarget "SSDMobileNet-CoreML" */ = {
+		554F14AA220362AC00B828B0 /* Build configuration list for PBXNativeTarget "ObjectDetection-CoreML" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				554F14AB220362AC00B828B0 /* Debug */,
