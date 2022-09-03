@@ -27,7 +27,7 @@ This project is Object Detection on iOS with Core ML.<br>If you are interested i
 ### Model Size, Minimum iOS Version, Download Link
 
 | Model | Size<br>(MB) | Minimum<br>iOS Version | Download<br>Link | Trained Dataset
-| :---- | :----: | :----: | ---- | --- | 
+| :---- | ----: | :----: | ---- | --- | 
 | yolov5n.mlmodel | 7.52 | iOS13 | [Link](https://github.com/tucan9389/ObjectDetection-CoreML/releases/download/yolov5-support/yolov5n.mlmodel) | [COCO](#trained-dataset-infos)
 | yolov5s.mlmodel | 28 | iOS13 | [Link](https://github.com/tucan9389/ObjectDetection-CoreML/releases/download/yolov5-support/yolov5s.mlmodel) | [COCO](#trained-dataset-infos)
 | yolov5m.mlmodel | 81.2 | iOS13 | [Link](https://github.com/tucan9389/ObjectDetection-CoreML/releases/download/yolov5-support/yolov5m.mlmodel) | [COCO](#trained-dataset-infos)
@@ -71,7 +71,7 @@ This project is Object Detection on iOS with Core ML.<br>If you are interested i
 ### Infernece Time (ms)
 
 | Model vs. Device    | 11<br>Pro | XS | XS<br>Max | XR | X | 7+ | 7 |
-| :---- | :----: | :----: | :----: | :----: | :----: | :----: | :----: | 
+| :---- | ----: | ----: | ----: | ----: | ----: | ----: | ----: | 
 | yolov5n             |  |  |  |  |  |  |  |
 | yolov5s             |  |  |  |  |  |  |  |
 | yolov5m             |  |  |  |  |  |  |  |
@@ -94,7 +94,7 @@ This project is Object Detection on iOS with Core ML.<br>If you are interested i
 ### Total Time (ms)
 
 | Model vs. Device    | 11<br>Pro | XS | XS<br>Max | XR | X | 7+ | 7 |
-| :---- | :----: | :----: | :----: | :----: | :----: | :----: | :----: | 
+| :---- | ----: | ----: | ----: | ----: | ----: | ----: | ----: | 
 | yolov5n             |  |  |  |  |  |  |  |
 | yolov5s             |  |  |  |  |  |  |  |
 | yolov5m             |  |  |  |  |  |  |  |
@@ -117,7 +117,7 @@ This project is Object Detection on iOS with Core ML.<br>If you are interested i
 ### FPS
 
 | Model vs. Device    | 11<br>Pro | XS | XS<br>Max | XR | X | 7+ | 7 |
-| :---- | :----: | :----: | :----: | :----: | :----: | :----: | :----: | 
+| :---- | ----: | ----: | ----: | ----: | ----: | ----: | ----: | 
 | yolov5n             |  |  |  |  |  |  |  |
 | yolov5s             |  |  |  |  |  |  |  |
 | yolov5m             |  |  |  |  |  |  |  |
