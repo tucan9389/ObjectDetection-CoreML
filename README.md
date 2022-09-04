@@ -24,7 +24,9 @@ git clone https://github.com/tucan9389/ObjectDetection-CoreML
 
 ### 2. Download the model
 
-You can download COCO models or another model from [here](#model-size-minimum-ios-version-download-link)
+- You can download COCO models or another model from [here](#model-size-minimum-ios-version-download-link)
+
+> Or if you want to make model with custom dataset, you can follow [this tutorial](https://github.com/ultralytics/yolov5/issues/12) with yolov5
 
 ### 3. Add the model to the project
 
