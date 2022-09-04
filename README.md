@@ -22,7 +22,7 @@ This project is Object Detection on iOS with Core ML.<br>If you are interested i
 git clone https://github.com/tucan9389/ObjectDetection-CoreML
 ```
 
-### 2. Download the model
+### 2. Prepare Core ML model
 
 - You can download COCO models or another model from [here](#model-size-minimum-ios-version-download-link)
 
