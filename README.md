@@ -102,74 +102,81 @@ You can check [here](https://github.com/mshamash/yolov5/blob/master/export.py#L1
   
 </details>
 
+## Performance
+
+> Build Setting:
+> Xcoede > Build Settings > Apple Clang - Code Generation > Optimization Level > Fastest [-O3]
+
+<img width="560" alt="Screen Shot 2022-09-05 at 4 31 08 PM" src="https://user-images.githubusercontent.com/37643248/188393214-d2e822a6-73b2-4971-a46d-27cdbfc8c61c.png">
+
 ### Infernece Time (ms)
 
 | Model vs. Device    | 13<br>Pro | 12<br>Pro | 11<br>Pro | XS | XS<br>Max | XR | X | 7+ | 7 |
 | :---- | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | 
-| yolov5n             |  |  |  |  |  |  |  |  |  |
-| yolov5s             |  |  |  |  |  |  |  |  |  |
-| yolov5m             |  |  |  |  |  |  |  |  |  |
-| yolov5l             |  |  |  |  |  |  |  |  |  |
-| yolov5x             |  |  |  |  |  |  |  |  |  |
-| yolov5n6            |  |  |  |  |  |  |  |  |  |
-| yolov5s6            |  |  |  |  |  |  |  |  |  |
-| yolov5m6            |  |  |  |  |  |  |  |  |  |
-| yolov5l6            |  |  |  |  |  |  |  |  |  |
-| yolov5x6            |  |  |  |  |  |  |  |  |  |
-| YOLOv3              |  |  | 83 | 108 | 93 | 100 | 356 | 569 | 561 | 
-| YOLOv3FP16          |  |  | 84 | 104 | 89 | 101 | 348 | 572 | 565 | 
-| YOLOv3Int8LUT       |  |  | 86 | 101 | 92 | 100 | 337 | 575 | 572 | 
-| YOLOv3Tiny          |  |  | 44 | 46 | 41 | 47 | 106 | 165 | 168 | 
-| YOLOv3TinyFP16      |  |  | 44 | 51 | 41 | 44 | 103 | 165 | 167 | 
-| YOLOv3TinyInt8LUT   |  |  | 44 | 45 | 39 | 39 | 106 | 160 | 161 | 
-| MobileNetV2_SSDLite |  |  | 18 | 31 | 31 | 31 | 109 | 141 | 134 | 
-| ObjectDetector      |  |  | 18 | 24 | 26 | 23 | 63 | 86 | 84 | 
+| yolov5n             |  | 24 |  |  |  |  |  |  |  |
+| yolov5s             |  | 29 |  |  |  |  |  |  |  |
+| yolov5m             |  | 39 |  |  |  |  |  |  |  |
+| yolov5l             |  | 38 |  |  |  |  |  |  |  |
+| yolov5x             |  | 69 |  |  |  |  |  |  |  |
+| yolov5n6            |  | 24 |  |  |  |  |  |  |  |
+| yolov5s6            |  | 34 |  |  |  |  |  |  |  |
+| yolov5m6            |  | 39 |  |  |  |  |  |  |  |
+| yolov5l6            |  | 41 |  |  |  |  |  |  |  |
+| yolov5x6            |  | 57 |  |  |  |  |  |  |  |
+| YOLOv3              |  | 45 | 83 | 108 | 93 | 100 | 356 | 569 | 561 | 
+| YOLOv3FP16          |  | 44 | 84 | 104 | 89 | 101 | 348 | 572 | 565 | 
+| YOLOv3Int8LUT       |  | 53 | 86 | 101 | 92 | 100 | 337 | 575 | 572 | 
+| YOLOv3Tiny          |  | 36 | 44 | 46 | 41 | 47 | 106 | 165 | 168 | 
+| YOLOv3TinyFP16      |  | 33 | 44 | 51 | 41 | 44 | 103 | 165 | 167 | 
+| YOLOv3TinyInt8LUT   |  | 39 | 44 | 45 | 39 | 39 | 106 | 160 | 161 | 
+| MobileNetV2_SSDLite |  | 17 | 18 | 31 | 31 | 31 | 109 | 141 | 134 | 
+| ObjectDetector      |  | 13 | 18 | 24 | 26 | 23 | 63 | 86 | 84 | 
 
 ### Total Time (ms)
 
 | Model vs. Device    | 13<br>Pro | 12<br>Pro | | 11<br>Pro | XS | XS<br>Max | XR | X | 7+ | 7 |
 | :---- | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | 
-| yolov5n             |  |  |  |  |  |  |  |  |  |
-| yolov5s             |  |  |  |  |  |  |  |  |  |
-| yolov5m             |  |  |  |  |  |  |  |  |  |
-| yolov5l             |  |  |  |  |  |  |  |  |  |
-| yolov5x             |  |  |  |  |  |  |  |  |  |
-| yolov5n6            |  |  |  |  |  |  |  |  |  |
-| yolov5s6            |  |  |  |  |  |  |  |  |  |
-| yolov5m6            |  |  |  |  |  |  |  |  |  |
-| yolov5l6            |  |  |  |  |  |  |  |  |  |
-| yolov5x6            |  |  |  |  |  |  |  |  |  |
-| YOLOv3              |  |  | 84 | 108 | 93 | 100 | 357 | 569 | 561 | 
-| YOLOv3FP16          |  |  | 85 | 104 | 89 | 101 | 348 | 572 | 565 | 
-| YOLOv3Int8LUT       |  |  | 86 | 102 | 92 | 102 | 338 | 576 | 573 | 
-| YOLOv3Tiny          |  |  | 45 | 46 | 42 | 48 | 106 | 166 | 169 | 
-| YOLOv3TinyFP16      |  |  | 45 | 51 | 41 | 44 | 104 | 165 | 167 | 
-| YOLOv3TinyInt8LUT   |  |  | 45 | 45 | 39 | 40 | 107 | 160 | 161 | 
-| MobileNetV2_SSDLite |  |  | 19 | 32 | 31 | 32 | 109 | 142 | 134 | 
-| ObjectDetector      |  |  | 18 | 25 | 26 | 23 | 64 | 87 | 85 | 
+| yolov5n             |  | 26 |  |  |  |  |  |  |  |
+| yolov5s             |  | 31 |  |  |  |  |  |  |  |
+| yolov5m             |  | 41 |  |  |  |  |  |  |  |
+| yolov5l             |  | 39 |  |  |  |  |  |  |  |
+| yolov5x             |  | 72 |  |  |  |  |  |  |  |
+| yolov5n6            |  | 25 |  |  |  |  |  |  |  |
+| yolov5s6            |  | 36 |  |  |  |  |  |  |  |
+| yolov5m6            |  | 41 |  |  |  |  |  |  |  |
+| yolov5l6            |  | 42 |  |  |  |  |  |  |  |
+| yolov5x6            |  | 59 |  |  |  |  |  |  |  |
+| YOLOv3              |  | 46 | 84 | 108 | 93 | 100 | 357 | 569 | 561 | 
+| YOLOv3FP16          |  | 45 | 85 | 104 | 89 | 101 | 348 | 572 | 565 | 
+| YOLOv3Int8LUT       |  | 54 | 86 | 102 | 92 | 102 | 338 | 576 | 573 | 
+| YOLOv3Tiny          |  | 37 | 45 | 46 | 42 | 48 | 106 | 166 | 169 | 
+| YOLOv3TinyFP16      |  | 35 | 45 | 51 | 41 | 44 | 104 | 165 | 167 | 
+| YOLOv3TinyInt8LUT   |  | 41 | 45 | 45 | 39 | 40 | 107 | 160 | 161 | 
+| MobileNetV2_SSDLite |  | 19 | 19 | 32 | 31 | 32 | 109 | 142 | 134 | 
+| ObjectDetector      |  | 14 | 18 | 25 | 26 | 23 | 64 | 87 | 85 | 
 
 ### FPS
 
 | Model vs. Device    | 13<br>Pro | 12<br>Pro | | 11<br>Pro | XS | XS<br>Max | XR | X | 7+ | 7 |
 | :---- | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | 
-| yolov5n             |  |  |  |  |  |  |  |  |  |
-| yolov5s             |  |  |  |  |  |  |  |  |  |
-| yolov5m             |  |  |  |  |  |  |  |  |  |
-| yolov5l             |  |  |  |  |  |  |  |  |  |
-| yolov5x             |  |  |  |  |  |  |  |  |  |
-| yolov5n6            |  |  |  |  |  |  |  |  |  |
-| yolov5s6            |  |  |  |  |  |  |  |  |  |
-| yolov5m6            |  |  |  |  |  |  |  |  |  |
-| yolov5l6            |  |  |  |  |  |  |  |  |  |
-| yolov5x6            |  |  |  |  |  |  |  |  |  |
-| YOLOv3              |  |  | 9 | 8 | 10 | 9 | 2 | 1 | 1 | 
-| YOLOv3FP16          |  |  | 9 | 9 | 10 | 8 | 2 | 1 | 1 | 
-| YOLOv3Int8LUT       |  |  | 9 | 9 | 10 | 9 | 2 | 1 | 1 | 
-| YOLOv3Tiny          |  |  | 14 | 21 | 22 | 20 | 8 | 5 | 5 | 
-| YOLOv3TinyFP16      |  |  | 14 | 19 | 23 | 21 | 9 | 5 | 5 | 
-| YOLOv3TinyInt8LUT   |  |  | 14 | 21 | 24 | 23 | 8 | 5 | 5 | 
-| MobileNetV2_SSDLite |  |  | 29 | 23 | 23 | 23 | 8 | 6 | 6 | 
-| ObjectDetector      |  |  | 29 | 23 | 23 | 24 | 14 | 10 | 11 | 
+| yolov5n             |  | 19 |  |  |  |  |  |  |  |
+| yolov5s             |  | 14 |  |  |  |  |  |  |  |
+| yolov5m             |  | 13 |  |  |  |  |  |  |  |
+| yolov5l             |  | 14 |  |  |  |  |  |  |  |
+| yolov5x             |  | 7 |  |  |  |  |  |  |  |
+| yolov5n6            |  | 19 |  |  |  |  |  |  |  |
+| yolov5s6            |  | 14 |  |  |  |  |  |  |  |
+| yolov5m6            |  | 13 |  |  |  |  |  |  |  |
+| yolov5l6            |  | 14 |  |  |  |  |  |  |  |
+| yolov5x6            |  | 13 |  |  |  |  |  |  |  |
+| YOLOv3              |  | 12 | 9 | 8 | 10 | 9 | 2 | 1 | 1 | 
+| YOLOv3FP16          |  | 13 | 9 | 9 | 10 | 8 | 2 | 1 | 1 | 
+| YOLOv3Int8LUT       |  | 14 | 9 | 9 | 10 | 9 | 2 | 1 | 1 | 
+| YOLOv3Tiny          |  | 14 | 14 | 21 | 22 | 20 | 8 | 5 | 5 | 
+| YOLOv3TinyFP16      |  | 14 | 14 | 19 | 23 | 21 | 9 | 5 | 5 | 
+| YOLOv3TinyInt8LUT   |  | 11 | 14 | 21 | 24 | 23 | 8 | 5 | 5 | 
+| MobileNetV2_SSDLite |  | 19 | 29 | 23 | 23 | 23 | 8 | 6 | 6 | 
+| ObjectDetector      |  | 17 | 29 | 23 | 23 | 24 | 14 | 10 | 11 | 
 
 ## See also
 

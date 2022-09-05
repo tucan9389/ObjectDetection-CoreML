@@ -4,14 +4,24 @@
 <dict>
 	<key>classNames</key>
 	<dict>
-		<key>SSDMobileNet_CoreMLTests</key>
+		<key>ObjectDetection_CoreMLTests</key>
 		<dict>
 			<key>testPerformanceSSDMobileNetV1Model()</key>
 			<dict>
 				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
 				<dict>
 					<key>baselineAverage</key>
-					<real>0.102000</real>
+					<real>0.030457</real>
+					<key>baselineIntegrationDisplayName</key>
+					<string>Local Baseline</string>
+				</dict>
+			</dict>
+			<key>testPerformanceYOLOv5sModel()</key>
+			<dict>
+				<key>com.apple.XCTPerformanceMetric_WallClockTime</key>
+				<dict>
+					<key>baselineAverage</key>
+					<real>0.033677</real>
 					<key>baselineIntegrationDisplayName</key>
 					<string>Local Baseline</string>
 				</dict>

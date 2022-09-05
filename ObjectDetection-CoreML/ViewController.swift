@@ -25,77 +25,9 @@ class ViewController: UIViewController {
     // YOLOv3(iOS12+), YOLOv3FP16(iOS12+), YOLOv3Int8LUT(iOS12+)
     // YOLOv3Tiny(iOS12+), YOLOv3TinyFP16(iOS12+), YOLOv3TinyInt8LUT(iOS12+)
     // MobileNetV2_SSDLite(iOS12+), ObjectDetector(iOS12+)
+    // yolov5n(iOS13+), yolov5s(iOS13+), yolov5m(iOS13+), yolov5l(iOS13+), yolov5x(iOS13+)
+    // yolov5n6(iOS13+), yolov5s6(iOS13+), yolov5m6(iOS13+), yolov5l6(iOS13+), yolov5x6(iOS13+)
     let objectDectectionModel = yolov5s()
-    
-    //XS
-    //XS Max
-    //XR
-    //X
-    //8
-    //8+
-    //7
-    //6S+
-    //6+
-    
-    //XS
-    // YOLOv3              : 108 108 8
-    // YOLOv3FP16          : 104 104 9
-    // YOLOv3Int8LUT       : 101 102 9
-    // YOLOv3Tiny          : 46 46 21
-    // YOLOv3TinyFP16      : 51 51 19
-    // YOLOv3TinyInt8LUT   : 45 45 21
-    // MobileNetV2_SSDLite : 31 32 23
-    // ObjectDetector      : 24 25 23
-    //    
-    //XS Max
-    // YOLOv3              : 93 93 10
-    // YOLOv3FP16          : 89 89 10
-    // YOLOv3Int8LUT       : 92 92 10
-    // YOLOv3Tiny          : 41 42 22
-    // YOLOv3TinyFP16      : 41 41 23
-    // YOLOv3TinyInt8LUT   : 39 39 24
-    // MobileNetV2_SSDLite : 31 31 23
-    // ObjectDetector      : 26 26 23
-    //
-    //XR
-    // YOLOv3              : 100 100 9
-    // YOLOv3FP16          : 101 101 8
-    // YOLOv3Int8LUT       : 100 102 9
-    // YOLOv3Tiny          : 47 48 20
-    // YOLOv3TinyFP16      : 44 44 21
-    // YOLOv3TinyInt8LUT   : 39 40 23
-    // MobileNetV2_SSDLite : 31 32 23
-    // ObjectDetector      : 23 23 24
-    //
-    //X
-    // YOLOv3              : 356 357 2
-    // YOLOv3FP16          : 348 348 2
-    // YOLOv3Int8LUT       : 337 338 2
-    // YOLOv3Tiny          : 106 106 8
-    // YOLOv3TinyFP16      : 103 104 9
-    // YOLOv3TinyInt8LUT   : 106 107 8
-    // MobileNetV2_SSDLite : 109 109 8
-    // ObjectDetector      : 63 64 14
-    //    
-    //7+
-    // YOLOv3              : 569 569 1
-    // YOLOv3FP16          : 572 572 1
-    // YOLOv3Int8LUT       : 575 576 1
-    // YOLOv3Tiny          : 165 166 5
-    // YOLOv3TinyFP16      : 165 165 5
-    // YOLOv3TinyInt8LUT   : 160 160 5
-    // MobileNetV2_SSDLite : 141 142 6
-    // ObjectDetector      : 86 87 10
-    //
-    //7
-    // YOLOv3              : 561 561 1
-    // YOLOv3FP16          : 565 565 1
-    // YOLOv3Int8LUT       : 572 573 1
-    // YOLOv3Tiny          : 168 169 5
-    // YOLOv3TinyFP16      : 167 167 5
-    // YOLOv3TinyInt8LUT   : 161 161 5
-    // MobileNetV2_SSDLite : 134 134 6
-    // ObjectDetector      : 84 85 11
     
     // MARK: - Vision Properties
     var request: VNCoreMLRequest?
