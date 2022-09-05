@@ -104,7 +104,7 @@ You can check [here](https://github.com/mshamash/yolov5/blob/master/export.py#L1
 
 ## Performance
 
-> Build Setting:
+> Build Setting:<br>
 > Xcoede > Build Settings > Apple Clang - Code Generation > Optimization Level > Fastest [-O3]
 
 <img width="560" alt="Screen Shot 2022-09-05 at 4 31 08 PM" src="https://user-images.githubusercontent.com/37643248/188393214-d2e822a6-73b2-4971-a46d-27cdbfc8c61c.png">
@@ -135,7 +135,7 @@ You can check [here](https://github.com/mshamash/yolov5/blob/master/export.py#L1
 ### Total Time (ms)
 
 | Model vs. Device    | 13<br>Pro | 12<br>Pro | | 11<br>Pro | XS | XS<br>Max | XR | X | 7+ | 7 |
-| :---- | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | 
+| :---- | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | 
 | yolov5n             |  | 26 |  |  |  |  |  |  |  |
 | yolov5s             |  | 31 |  |  |  |  |  |  |  |
 | yolov5m             |  | 41 |  |  |  |  |  |  |  |
@@ -158,7 +158,7 @@ You can check [here](https://github.com/mshamash/yolov5/blob/master/export.py#L1
 ### FPS
 
 | Model vs. Device    | 13<br>Pro | 12<br>Pro | | 11<br>Pro | XS | XS<br>Max | XR | X | 7+ | 7 |
-| :---- | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | 
+| :---- | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | ----: | 
 | yolov5n             |  | 19 |  |  |  |  |  |  |  |
 | yolov5s             |  | 14 |  |  |  |  |  |  |  |
 | yolov5m             |  | 13 |  |  |  |  |  |  |  |
