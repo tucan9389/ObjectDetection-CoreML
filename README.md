@@ -1,6 +1,6 @@
 # ObjectDetection-CoreML
 
-> supporting models: `yolov5`, `yolov3`
+> supporting models: [`yolov5`](https://github.com/ultralytics/yolov5), [`yolov3`](https://github.com/ultralytics/yolov3)
 
 ![platform-ios](https://img.shields.io/badge/platform-ios-lightgrey.svg)
 ![swift-version](https://img.shields.io/badge/swift-4.2-red.svg)
