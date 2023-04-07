@@ -32,7 +32,7 @@ git clone https://github.com/tucan9389/ObjectDetection-CoreML
 
 ### 3. Add the model to the project
 
-By default, the project uses the `yolov5s` model. If you want to use another model, you can replace the model file in the project.
+By default, the project uses the `yolov8s` model. If you want to use another model, you can replace the model file in the project.
 
 <img width="1305" alt="Screen Shot 2022-09-03 at 9 48 43 AM" src="https://user-images.githubusercontent.com/37643248/188249381-391d494d-47f0-4bd7-b70b-88809a2d7f04.png">
 
