@@ -89,7 +89,8 @@ python main.py
 
 ### Model Matadata
 
-<img width="640" alt="image" src="https://user-images.githubusercontent.com/37643248/188037159-93cf79f7-5c21-4fbf-a46e-874109271606.png">
+<img width="640" alt="image" src="https://user-images.githubusercontent.com/37643248/230690729-ed084be1-f6d6-42a3-b72a-3b5987143bbc.png">
+
 
 ### Model Size, Minimum iOS Version, Download Link
 
