@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     // yolov5n(iOS13+), yolov5s(iOS13+), yolov5m(iOS13+), yolov5l(iOS13+), yolov5x(iOS13+)
     // yolov5n6(iOS13+), yolov5s6(iOS13+), yolov5m6(iOS13+), yolov5l6(iOS13+), yolov5x6(iOS13+)
     // yolov8n(iOS14+), yolov8s(iOS14+), yolov8m(iOS14+), yolov8l(iOS14+), yolov8x(iOS14+)
-    lazy var objectDectectionModel: yolov8s? = { return try? yolov8s() }()
+    lazy var objectDectectionModel = { return try? yolov8s() }()
     
     // MARK: - Vision Properties
     var request: VNCoreMLRequest?
