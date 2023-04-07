@@ -17,10 +17,9 @@
 		554F14AE220362DA00B828B0 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554F14AD220362DA00B828B0 /* VideoCapture.swift */; };
 		558918ED2208218800F182BA /* DrawingBoundingBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558918EC2208218800F182BA /* DrawingBoundingBoxView.swift */; };
 		558918EF22089FFE00F182BA /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558918EE22089FFE00F182BA /* Measure.swift */; };
-		C427E67328C2DD18001279AD /* yolov5s.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C427E67228C2DD18001279AD /* yolov5s.mlmodel */; };
 		C427E6B228C5D85B001279AD /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553366CE220489DD00A67647 /* UIImage+CVPixelBuffer.swift */; };
-		C427E6BD28C5D89B001279AD /* yolov5s.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C427E67228C2DD18001279AD /* yolov5s.mlmodel */; };
 		C427E6C928C5DAF3001279AD /* IMG_8564.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C427E6C828C5DAF3001279AD /* IMG_8564.JPG */; };
+		C4946DC229E0D00200DC0E3C /* yolov8s.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = C4946DC129E0D00200DC0E3C /* yolov8s.mlpackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +47,8 @@
 		554F14AD220362DA00B828B0 /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 		558918EC2208218800F182BA /* DrawingBoundingBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingBoundingBoxView.swift; sourceTree = "<group>"; };
 		558918EE22089FFE00F182BA /* Measure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
-		C427E67228C2DD18001279AD /* yolov5s.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = yolov5s.mlmodel; sourceTree = "<group>"; };
 		C427E6C828C5DAF3001279AD /* IMG_8564.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_8564.JPG; sourceTree = "<group>"; };
+		C4946DC129E0D00200DC0E3C /* yolov8s.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8s.mlpackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +116,7 @@
 		71B8322222E2B0B200207D05 /* mlmodel */ = {
 			isa = PBXGroup;
 			children = (
-				C427E67228C2DD18001279AD /* yolov5s.mlmodel */,
+				C4946DC129E0D00200DC0E3C /* yolov8s.mlpackage */,
 			);
 			path = mlmodel;
 			sourceTree = "<group>";
@@ -234,7 +233,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C427E6BD28C5D89B001279AD /* yolov5s.mlmodel in Sources */,
 				553366C62204898800A67647 /* ObjectDetection_CoreMLTests.swift in Sources */,
 				C427E6B228C5D85B001279AD /* UIImage+CVPixelBuffer.swift in Sources */,
 			);
@@ -244,12 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4946DC229E0D00200DC0E3C /* yolov8s.mlpackage in Sources */,
 				554F149E220362AB00B828B0 /* ViewController.swift in Sources */,
 				558918EF22089FFE00F182BA /* Measure.swift in Sources */,
 				558918ED2208218800F182BA /* DrawingBoundingBoxView.swift in Sources */,
 				553366CF220489DD00A67647 /* UIImage+CVPixelBuffer.swift in Sources */,
 				554F14AE220362DA00B828B0 /* VideoCapture.swift in Sources */,
-				C427E67328C2DD18001279AD /* yolov5s.mlmodel in Sources */,
 				554F149C220362AB00B828B0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,7 +446,7 @@
 				DEVELOPMENT_TEAM = 5WXJ4Z4H69;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "ObjectDetection-CoreML/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,7 +465,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5WXJ4Z4H69;
 				INFOPLIST_FILE = "ObjectDetection-CoreML/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
