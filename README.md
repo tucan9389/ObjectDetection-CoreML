@@ -240,5 +240,7 @@ ObjectDetector.mlmodel | 63.7 | iOS12 | [Link](https://github.com/tucan9389/Obje
 - [hollance/coreml-survival-guide](https://github.com/hollance/coreml-survival-guide)
 - [vonholst/SSDMobileNet_CoreML](https://github.com/vonholst/SSDMobileNet_CoreML)<br>
   : iOS project for object detection(SSDMobileNet V1) using Core ML.
+- [ultralytics/ultralytics](https://github.com/ultralytics/ultralytics)<br>
+  : YOLOv8 repository
 - [ultralytics/yolov5](https://github.com/ultralytics/yolov5)<br>
   : YOLOv5 repository
