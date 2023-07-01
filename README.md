@@ -96,11 +96,11 @@ python main.py
 
 Model | Size<br>(MB) | Minimum<br>iOS Version | Download<br>Link | Trained Dataset
 :---- | ----: | :----: | ---- | --- | 
-yolov8n | 12.7 | iOS14 | [Link](https://github.com/tucan9389/ObjectDetection-CoreML/releases/download/yolov8-models/yolov8n.mlpackage.zip)
-yolov8s | 44.7 | iOS14 | [Link](https://github.com/tucan9389/ObjectDetection-CoreML/releases/download/yolov8-models/yolov8s.mlpackage.zip)
-yolov8m | 52.1 | iOS14 | [Link](https://github.com/tucan9389/ObjectDetection-CoreML/releases/download/yolov8-models/yolov8m.mlpackage.zip)
-yolov8l | 87.8 | iOS14 | [Link](https://github.com/tucan9389/ObjectDetection-CoreML/releases/download/yolov8-models/yolov8l.mlpackage.zip)
-yolov8x | 272.9 | iOS14 | [Link](https://github.com/tucan9389/ObjectDetection-CoreML/releases/download/yolov8-models/yolov8x.mlpackage.zip)
+yolov8n.mlmodel | 12.7 | iOS14 | [Link](https://github.com/tucan9389/ObjectDetection-CoreML/releases/download/yolov8-models/yolov8n.mlpackage.zip)
+yolov8s.mlmodel | 44.7 | iOS14 | [Link](https://github.com/tucan9389/ObjectDetection-CoreML/releases/download/yolov8-models/yolov8s.mlpackage.zip)
+yolov8m.mlmodel | 52.1 | iOS14 | [Link](https://github.com/tucan9389/ObjectDetection-CoreML/releases/download/yolov8-models/yolov8m.mlpackage.zip)
+yolov8l.mlmodel | 87.8 | iOS14 | [Link](https://github.com/tucan9389/ObjectDetection-CoreML/releases/download/yolov8-models/yolov8l.mlpackage.zip)
+yolov8x.mlmodel | 272.9 | iOS14 | [Link](https://github.com/tucan9389/ObjectDetection-CoreML/releases/download/yolov8-models/yolov8x.mlpackage.zip)
 yolov5n.mlmodel | 7.52 | iOS13 | [Link](https://github.com/tucan9389/ObjectDetection-CoreML/releases/download/yolov5-models/yolov5n.mlmodel) | [COCO](#trained-dataset-infos)
 yolov5s.mlmodel | 28.0 | iOS13 | [Link](https://github.com/tucan9389/ObjectDetection-CoreML/releases/download/yolov5-models/yolov5s.mlmodel) | [COCO](#trained-dataset-infos)
 yolov5m.mlmodel | 81.2 | iOS13 | [Link](https://github.com/tucan9389/ObjectDetection-CoreML/releases/download/yolov5-models/yolov5m.mlmodel) | [COCO](#trained-dataset-infos)
